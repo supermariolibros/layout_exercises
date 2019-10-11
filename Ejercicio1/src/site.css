@@ -1,0 +1,33 @@
+.container {
+    margin: 2em;
+    background-color: grey;
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    grid-gap: 
+}
+
+.item-a {
+    grid-area: header;
+    background-color: deeppink;
+}
+
+.item-b {
+    grid-area: main;
+    background-color: darkgreen;
+}
+
+.item-c {
+    grid-area: sidebar;
+    background-color: skyblue;
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: yellow;
+}
