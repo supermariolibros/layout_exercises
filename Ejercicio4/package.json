@@ -1,0 +1,16 @@
+{
+  "name": "Ejercicio4",
+  "version": "1.0.0",
+  "description": "Ejercicios a entregar para el master de Lemon code. El primer modulo",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "Marioli Montenegro",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.23.0"
+  }
+}

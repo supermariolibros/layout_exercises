@@ -1,0 +1,54 @@
+@import "./_init.scss";
+@import "_mixins.scss";
+@import "_color.scss";
+
+body {
+   font-family: sans-serif;
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+.main-display {
+   flex-grow: 1;
+   background-color: white;
+}
+
+.nav-menu {
+   display: flex;
+   align-items: center;
+   background-color: pink;
+   grid-area: nav-menu;
+}
+
+.content-a {
+   grid-area: content-a;
+   background-color: yellow;
+}
+
+.content-b {
+   grid-area: content-b;
+   background-color: blue;
+}
+
+@media screen and (min-width : 75rem) {
+   .main-content {
+      @include extra-large-resolution;
+  }
+}
+
+@media screen and (max-width : 74.9rem) and (min-width: 60rem){
+      .main-content {
+         @include large-resolution;
+     }
+}
+
+@media screen and (max-width : 59.9rem) and (min-width: 48rem) {
+   .main-content {
+       @include medium-resolution;
+   }
+}
+
+@media screen and (max-width: 47.9rem) {
+   @include small-resolution;
+}
