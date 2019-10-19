@@ -6,28 +6,7 @@
   grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
 }
 
-@mixin extra-large-resolution {
-  @include grid-resolution;
- grid-template-areas: 
-    "nav-menu content-a content-a"
-    "nav-menu content-a content-a"
-    "nav-menu content-a content-a"
-    "nav-menu content-b content-b"
-    "nav-menu content-b content-b"
-    "nav-menu content-b content-b";
-    width: 80%;
-    padding-left: 10%;
-    .nav-menu {
-      flex-direction: column;
-      padding-top: 50%;
-    }
-    .nav-content-item{
-      flex:1;
-    }
-  }
-
-@mixin large-resolution {
-  @include grid-resolution;
+@mixin big-resolution {
   grid-template-areas: 
     "nav-menu content-a content-a"
     "nav-menu content-a content-a"
@@ -35,8 +14,7 @@
     "nav-menu content-b content-b"
     "nav-menu content-b content-b"
     "nav-menu content-b content-b";
-    width: 90%;
-    padding-left: 5%;
+
     .nav-menu {
       flex-direction: column;
       padding-top: 50%;
@@ -44,6 +22,20 @@
     .nav-content-item{
       flex:1;
     }
+}
+
+@mixin extra-large-resolution {
+  @include grid-resolution;
+  @include big-resolution;
+    width: 80%;
+    padding-left: 10%;
+  }
+
+@mixin large-resolution {
+  @include grid-resolution;
+  @include big-resolution;
+    width: 90%;
+    padding-left: 5%;
 }
 
 @mixin medium-resolution {
