@@ -1,20 +1,16 @@
 {
-  "name": "module_1_playground",
+  "name": "Ejercicio1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ejercicios a entregar para el master de Lemon code. El primer modulo",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Marioli Montenegro",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^1.12.3",
+    "parcel": "^1.12.4",
     "sass": "^1.23.0"
-  },
-  "dependencies": {
-    "body": "^5.1.0"
   }
 }
