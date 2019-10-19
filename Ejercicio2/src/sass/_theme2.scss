@@ -1,0 +1,46 @@
+
+div {
+
+    height: 4em;
+    width: 8em;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    border: 3px red solid;
+    border-radius: 20px;
+    padding-top: 20px;
+    text-align: center;
+ }
+ 
+ .base {
+    background-color: blue;
+ }
+ 
+ .important {
+    background-color: blueviolet;
+ }
+ 
+ .warning {
+    background-color: cyan;
+ }
+ 
+ .principal {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 3em;
+    border: none;
+    font-size: 1.2em;
+    padding-top:1em; 
+ }
+ 
+ .secundary {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 2em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+ }
+ 
+ .box-with-shadow {
+    background-color: grey;
+    box-shadow: -10px 20px;
+ 
+ }

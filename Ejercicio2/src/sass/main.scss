@@ -1,0 +1,12 @@
+@import "./_init.scss";
+@import "_theme2.scss";
+
+
+$baseSize: 14px;
+body {
+   background: white;
+   font-family: 'Raleway', sans-serif;
+   font-size: $baseSize;
+   margin-top: 20px;
+   margin-left: 20px;
+}
